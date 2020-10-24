@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Open_Lab_03._06
 {
@@ -6,7 +7,10 @@ namespace Open_Lab_03._06
     {
         public bool HasSpaces(string str)
         {
-            throw new NotImplementedException();
+            if (str.ToLower().Contains(" "))
+                return true;
+            else
+                return false;
         }
     }
 }
